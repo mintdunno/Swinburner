@@ -35,7 +35,7 @@ app.get('/api/question', (req, res) => {
 // mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
 //     console.log('Connected to DB')
 // );
-mongoose.connect(process.env.DB_CONNECTION);
+mongoose.connect('process.env.DB_CONNECTION');
 
 // Listen to server
 app.listen(3000, () => console.log('Listening on http://localhost:3000'));
