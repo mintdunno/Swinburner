@@ -1,0 +1,41 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url("/img/hello.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.container {
+   margin: 0;
+   padding: 0;
+   margin-top: 100px;
+}
+
+.pointer {
+   width: 30%;
+   height: 50px;
+   position: relative;
+   background: #F0EDCF;
+   color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 30px;
+}
+
+.pointer:hover {
+   background: black;
+}
+
+.pointer:before {
+   content: "";
+   position: absolute;
+   right: -25px;
+   bottom: 0;
+   width: 0;
+   height: 0;
+   border-top: 26px solid transparent;
+   border-bottom: 26px solid transparent;
+   border-left: 26px solid #F0EDCF;
+}

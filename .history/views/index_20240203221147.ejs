@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script>
+        window.onload = function () {
+            document.getElementById("myAudio").play();
+        }
+
+    </script>
+</head>
+
+<body>
+    <audio src="/audio/hello.mp3" type="audio/mp3" id="myAudio" autoplay></audio>
+
+    <div id="button">
+        <button>Play</button>
+    </div>
+
+    <img id="amitabh-img" src="/img/amitabh_blue.png" alt="" />
+
+    <div id="logo-img-shadow"></div>
+    <img id="logo-img" src="/img/logo.png" alt="" />
+
+    <div id="powered-by">
+        <h3>Powered by</h3>
+        <img src="/img/IDFC.jpg" alt="" />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="/js/index.js" defer></script>
+</body>
+
+</html>
