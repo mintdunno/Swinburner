@@ -46,7 +46,6 @@ main {
     align-items: baseline;
     background: inherit;
     justify-content: center;
-    /* margin-top: 370px; */
 }
 
 .timer {
@@ -432,4 +431,10 @@ aside {
 
 #end-game-dialog {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 2000px) {
+    .hello {
+        display: none;
+    }
 }

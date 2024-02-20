@@ -31,10 +31,6 @@ app.get('/api/question', (req, res) => {
     res.render('addquestion');
 });
 
-// Connect to db
-// mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
-//     console.log('Connected to DB')
-// );
 mongoose.connect(process.env.DB_CONNECTION)
     .then(function () {
         console.log("Database connected");
