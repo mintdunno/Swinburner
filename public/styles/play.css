@@ -437,4 +437,29 @@ aside {
     .hello {
         display: none;
     }
+
+    .timer-div {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .timer-div {
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .timer-div {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .timer-div {
+        margin-top: 0px;
+    }
 }
