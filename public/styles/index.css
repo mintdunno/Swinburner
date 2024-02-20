@@ -114,3 +114,9 @@ body {
    width: 70%;
    max-width: 500px;
 }
+
+@media only screen and (max-width: 1900px) {
+   .container {
+      margin-top: 50px;
+   }
+}
