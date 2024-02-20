@@ -9,3 +9,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+#backBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
