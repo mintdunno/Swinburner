@@ -1,9 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("/img/background.gif");
+    background-image: url("/img/credit.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.credit ul {
+    font-size: 100px;
+    color: aliceblue;
+    list-style-type: none;
 }
