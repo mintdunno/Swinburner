@@ -10,6 +10,10 @@ const playBtn = document.getElementById('play-button'),
    hearbeat = document.getElementById('heartbeat'),
    sound = document.getElementById("sound")
 
+var modal = document.getElementById("myModal");
+// Get the image and insert it inside the modal
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
 // Click Play Button
 playBtn.addEventListener('click', () => {
    window.location.href = '/play';
@@ -55,3 +59,19 @@ document.getElementById("soundbutton").addEventListener("click", function () {
    this.textContent = this.textContent === "Mute 🔇" ? "Unmute 🔈" : "Mute 🔇"; // change this to image.src if you have one
    sound.muted = !sound.muted;
 })
+
+
+img.onclick = function () {
+   modal.style.display = "block";
+   modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+   if (event.target == modal) {
+      modal.style.display = "none";
+   }
+}
