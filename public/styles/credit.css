@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -14,4 +12,13 @@ body {
     position: absolute;
     bottom: 20px;
     right: 20px;
+}
+
+#backBtn img {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#backBtn img:hover {
+    background-color: yellowgreen;
 }
