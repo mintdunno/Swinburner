@@ -28,6 +28,10 @@ app.get('/play', (req, res) => {
     res.render('play');
 });
 
+app.get('/hello', (req, res) => {
+    res.render('hello');
+});
+
 app.get('/credit', (req, res) => {
     res.render('credit');
 });
