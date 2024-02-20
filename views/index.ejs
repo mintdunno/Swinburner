@@ -17,7 +17,10 @@
 </head>
 
 <body>
-    <audio src="/audio/pokemon.mp3" type="audio/mp3" id="sound" loop></audio>
+    <audio id="heartbeat" src="/audio/select.mp3" preload="auto">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+
 
     <div class="container">
         <div class="d-flex flex-column gap-5">
@@ -30,16 +33,12 @@
         </div>
     </div>
 
-    <audio id="heartbeat" src="/audio/select.mp3" preload="auto">
-        Your browser does not support the <code>audio</code> element.
-    </audio>
-
-
     <button type="button" id="soundbutton">Mute 🔇</button>
     </div>
     <div id="kahoot">
         <img src="/img/kahoot.png" alt="">
     </div>
+    <audio src="/audio/credit.mp3" type="audio/mp3" id="sound" loop></audio>
 
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
