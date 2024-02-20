@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv/config');
+const MongoDB = "mongodb+srv://mint:mintmint@cluster0.olmivvs.mongodb.net/?retryWrites=true&w=majority";
 
 // Middlewares
 app.set('view engine', 'ejs');
@@ -31,7 +32,7 @@ app.get('/api/question', (req, res) => {
     res.render('addquestion');
 });
 
-mongoose.connect(process.env.DB_CONNECTION)
+mongoose.connect(MongoDB)
     .then(function () {
         console.log("Database connected");
     })
