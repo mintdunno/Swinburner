@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/rule.png");
+    color: white;
+}
+
+#backBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#backBtn img {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#backBtn img:hover {
+    background-color: #F0D245;
+}
