@@ -32,6 +32,10 @@ app.get('/credit', (req, res) => {
     res.render('credit');
 });
 
+app.get('/rule', (req, res) => {
+    res.render('rule');
+});
+
 app.get('/api/question', (req, res) => {
     res.render('addquestion');
 });

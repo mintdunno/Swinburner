@@ -16,7 +16,7 @@ playBtn.addEventListener('click', () => {
 });
 // Click Rules Button
 ruleBtn.addEventListener('click', () => {
-   window.location.href = '/rules';
+   window.location.href = '/rule';
 });
 // Click Credit Button
 creditBtn.addEventListener('click', () => {
