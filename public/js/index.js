@@ -4,16 +4,24 @@ window.addEventListener("DOMContentLoaded", event => {
    audio.play();
 });
 
-const playButton = document.getElementById("play-button")
-playButton.addEventListener('click', () => {
-   window.location.href = '/play';
-});
-
-var playBtn = document.getElementById('play-button'),
-   resetBtn = document.getElementById('instruction'),
+const playBtn = document.getElementById('play-button'),
+   creditBtn = document.getElementById('credit'),
    ruleBtn = document.getElementById('rules'),
    hearbeat = document.getElementById('heartbeat'),
    sound = document.getElementById("sound")
+
+// Click Play Button
+playBtn.addEventListener('click', () => {
+   window.location.href = '/play';
+});
+// Click Rules Button
+ruleBtn.addEventListener('click', () => {
+   window.location.href = '/rules';
+});
+// Click Credit Button
+creditBtn.addEventListener('click', () => {
+   window.location.href = '/credit';
+});
 
 playBtn.addEventListener('mouseover', function () {
    heartbeat.play();
@@ -24,11 +32,11 @@ playBtn.addEventListener('mouseleave', function () {
    heartbeat.currentTime = 0;
 }, false);
 
-resetBtn.addEventListener('mouseover', function () {
+creditBtn.addEventListener('mouseover', function () {
    heartbeat.play();
 }, false);
 
-resetBtn.addEventListener('mouseleave', function () {
+creditBtn.addEventListener('mouseleave', function () {
    heartbeat.pause();
    heartbeat.currentTime = 0;
 }, false);
