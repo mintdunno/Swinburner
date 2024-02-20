@@ -1,6 +1,6 @@
+const audio = document.getElementById("sound");
 window.addEventListener("DOMContentLoaded", event => {
-   const audio = document.getElementById("sound");
-   audio.volume = 0.1;
+   audio.volume = 0.2;
    audio.play();
 });
 
