@@ -84,7 +84,7 @@ body {
 }
 
 #kahoot img {
-   width: 300px;
+   max-width: 200px;
    position: absolute;
    bottom: 10px;
    right: 10px;
@@ -108,8 +108,9 @@ body {
 
 /* Modal Content (Image) */
 .modal-content {
+   border-radius: 20px;
    margin: auto;
    display: block;
-   width: 80%;
-   max-width: 700px;
+   width: 70%;
+   max-width: 500px;
 }
