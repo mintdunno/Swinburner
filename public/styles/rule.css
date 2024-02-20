@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -18,4 +21,30 @@ body {
 
 #backBtn img:hover {
     background-color: #F0D245;
+}
+
+.gameRules {
+    margin-left: 30px;
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#intro {
+    color: #D500F9;
+    font-size: 100px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hello {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.hello span {
+    margin-left: 40px;
+    font-size: 25px;
 }
