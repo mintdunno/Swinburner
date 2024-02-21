@@ -29,6 +29,7 @@ var wrongSound = document.getElementById('wrong');
 var chanaSound = document.getElementById('chana')
 var fiftySound = document.getElementById('fiftySound');
 var maSound = document.getElementById('ma');
+var video = document.getElementById('video');
 
 // Time Container
 const timer = {
@@ -626,6 +627,8 @@ lifelines.askTheExpert.addEventListener('click', () => {
         const btnClose = document.getElementById('ask-the-expert-close');
         btnClose.addEventListener('click', () => {
             audio.play();
+            video.pause();
+            video.currentTime = 0;
             dialogs.expertDialog.style.display = 'none';
 
             // Resume the timer if it exists
