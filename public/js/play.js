@@ -196,10 +196,10 @@ function getQuestion(price) {
     }
     // Set the time
     if (slot <= 5) {
-        setTimer(45);
+        setTimer(120);
         console.log('Timer Entered if');
     } else if (slot <= 10) {
-        setTimer(60);
+        setTimer(180);
         console.log('Timer Entered else if');
     } else {
         setTimer(null);
