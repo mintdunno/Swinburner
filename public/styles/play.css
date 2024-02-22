@@ -242,15 +242,15 @@ main {
 
 .dialog {
     position: absolute;
-    top: 35%;
-    left: 50%;
+    bottom: -100px;
+    right: -650px;
     transform: translate(-50%, -50%);
     width: 400px;
     display: none;
     border: 2px solid #f0d245;
-    padding: 20px;
+    padding: 10px;
     background: #AD8B73;
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 20px;
 }
 
 .dialog-message {
