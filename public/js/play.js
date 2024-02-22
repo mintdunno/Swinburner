@@ -411,14 +411,6 @@ function nextQuestion() {
         checkpoint = slot;
     }
 
-    // if (slot == 10) {
-    //     // Unlock 7 crore question
-    //     lockedElements = document.querySelectorAll('.locked');
-    //     lockedElements.forEach(lockedElement => {
-    //         lockedElement.classList.remove('locked');
-    //     });
-    // }
-
     if (!isFlip) {
         // Save color marker
         const marker = document.getElementById(`slot-marker-${slot}`);
@@ -447,10 +439,6 @@ function endGame() {
         window.location.href = 'http://localhost:3000';
     });
 
-    // setTimeout(() => {
-    //     window.location.href = 'http://localhost:3000';
-    // }, 4000);
-
     // Clear markers
     document.querySelectorAll('.reached').forEach(marker => {
         marker.style.visibility = 'hidden';
@@ -469,54 +457,6 @@ lifelines.audiencePoll.addEventListener('click', () => {
     if (div.classList.contains('unused')) {
         audio.pause();
         div.classList.remove('unused');
-
-        // // Use the lifeline
-
-        // // Send Audience Poll AJAX Request
-        // const audiencePollRequest = new XMLHttpRequest();
-        // audiencePollRequest.onload = () => {
-        //     let responseObject = null;
-
-        //     try {
-        //         responseObject = JSON.parse(audiencePollRequest.responseText);
-        //     } catch (err) {
-        //         console.log('Could not parse JSON!');
-        //     }
-
-        //     if (responseObject) {
-        //         if (audiencePollRequest.status == 200) {
-        //             createChart(
-        //                 responseObject.option1,
-        //                 responseObject.option2,
-        //                 responseObject.option3,
-        //                 responseObject.option4
-        //             );
-        //             div.classList.remove('unused');
-        //         } else {
-        //             console.log('Error');
-        //         }
-        //     }
-        // };
-
-        // if (fiftyFiftyDetailsContainer.is50) {
-        //     console.log('Entered 50-50 to audiencePoll');
-        //     let removedOption1 = fiftyFiftyDetailsContainer.removedOptions[0];
-        //     let removedOption2 = fiftyFiftyDetailsContainer.removedOptions[1];
-
-        //     audiencePollRequest.open(
-        //         'get',
-        //         `http://localhost:3000/api/lifelines/50-50-to-audiencepoll/${questionId}/${removedOption1}/${removedOption2}`,
-        //         true
-        //     );
-        // } else {
-        //     audiencePollRequest.open(
-        //         'get',
-        //         `http://localhost:3000/api/lifelines/audiencepoll/${questionId}`,
-        //         true
-        //     );
-        // }
-
-        // audiencePollRequest.send();
 
         const btnClose = document.getElementById('audience-poll-close');
         btnClose.addEventListener('click', () => {
